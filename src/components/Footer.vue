@@ -23,7 +23,7 @@
           &amp;
           {{ siteIcp }}
         </a>
-      </div>
+       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
           <div class="lrc-all" :key="store.getPlayerLrc">
@@ -66,14 +66,15 @@ const siteUrl = computed(() => {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 46px;
-  line-height: 46px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   z-index: 0;
   font-size: 14px;
   .power {
     animation: fade 0.3s;
   }
+  
   .lrc {
     padding: 0 20px;
     display: flex;
